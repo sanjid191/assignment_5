@@ -66,10 +66,12 @@ function savingCalculation() {
     document.getElementById('saving-text').style.display = 'none';
     document.getElementById('remain-balance').style.display = 'none';
     document.getElementById('saving-total').innerText = ` Please input valid number`;
+
   } else if (totalBalance < savingAmount(incomeValue, savingValue)) {
     document.getElementById('saving-text').style.display = 'none';
     document.getElementById('remain-balance').style.display = 'none';
     document.getElementById('saving-total').innerText = ` Impossible to save money more than Balance`;
+
   } else {
     document.getElementById('saving-text').style.display = 'block';
     document.getElementById('remain-balance').style.display = 'block';
