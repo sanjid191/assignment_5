@@ -15,7 +15,7 @@
   <header class="pb-3 pt-5">
     <div class="container">
       <div class="logo text-center">
-        <h1 class="text-primary">Manage Money</h1>
+        <h1 class="text-black">Manage Money</h1>
       </div>
     </div>
   </header>
@@ -24,8 +24,8 @@
   <main>
     <section class="py-5">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-6">
+        <div class="row gy-5">
+          <div class="col-md-3">
             <div class="wallet-image position-sticky top-0 shadow-sm">
               <img src="image/images.jpeg" class="img-fluid" alt="">
             </div>
@@ -34,9 +34,9 @@
             <div class="wallet-form text-center px-0 px-sm-3">
 
               <div class="input-income">
-                <h3 class="mb-3"> Total Income</h3>
+                <h3 class="mb-3 text-success"> Total Income</h3>
                 <div class="row mb-3 justify-content-between justify-content-sm-center">
-                  <label for="input-income" class="col-2 col-form-label">Income :</label>
+                  <label for="input-income" class="col-2 col-form-label fs-5">Income :</label>
                   <div class="col-9 col-sm-10">
                     <input type="text" class="form" id="input-income">
                   </div>
@@ -45,35 +45,36 @@
 
 
               <div class="expense-input">
-                <h3 class="mb-3">Expenses</h3>
+                <h3 class="mb-3 text-success">Expenses</h3>
                 <div class="row mb-3 justify-content-between justify-content-sm-center">
-                  <label for="cost-food" class="col-2 col-form-label">Food :</label>
+                  <label for="cost-food" class="col-2 col-form-label fs-5">Food :</label>
                   <div class="col-9 col-sm-10">
                     <input type="text" class="form" id="cost-food">
                   </div>
                 </div>
                 <div class="row mb-3 justify-content-between justify-content-sm-center">
-                  <label for="cost-rent" class="col-2 col-form-label">Rent :</label>
+                  <label for="cost-rent" class="col-2 col-form-label fs-5">Rent :</label>
                   <div class="col-9 col-sm-10">
                     <input type="text" class="form" id="cost-rent">
                   </div>
                 </div>
                 <div class="row mb-3 justify-content-between justify-content-sm-center">
-                  <label for="cost-clothe" class="col-2 col-form-label">Clothes :</label>
+                  <label for="cost-clothe" class="col-2 col-form-label fs-5">Clothes :</label>
                   <div class="col-9 col-sm-10">
                     <input type="text" class="form" id="cost-clothe">
                   </div>
                 </div>
                 <div class="calc-btn">
-                  <button class="btn btn-primary" id="calculate-Button">Calculate</button>
+                  <button class="btn btn-secondary" id="calculate-Button">Calculate</button>
                 </div>
               </div>
 
 
               <div class="total-expense my-4">
-                <h4><span id="expenses-text">Total Expenses:</span> <span id="total-expenses"></span>
+                <h4 class="text-success"><span id="expenses-text">Total Expenses:</span> <span
+                    id="total-expenses"></span>
                 </h4>
-                <h4 id="failed-balance"> Remain Balance: <span id="total-balance"></span></h4>
+                <h4 class="text-success" id="failed-balance"> Remain Balance: <span id="total-balance"></span></h4>
               </div>
 
 
@@ -81,14 +82,14 @@
                 <h4 class="me-2">Save:</h4>
                 <input type="text" class="form me-2" id="saving-input">
                 <span class="me-2">%</span>
-                <button class="btn btn-primary" onclick="savingCalculation()">Save</button>
+                <button class="btn btn-secondary" onclick="savingCalculation()">Save</button>
               </div>
 
 
               <div class="total-expense mt-4">
-                <h4><span id="saving-text">Saving Amount:</span> <span id="saving-total"></span>
+                <h4 class="text-success"><span id="saving-text">Saving Amount:</span> <span id="saving-total"></span>
                 </h4>
-                <h4 id="remain-balance">Remaining Balance: <span id="remaining-amount"></span></h4>
+                <h4 class="text-success" id="remain-balance">Remaining Balance: <span id="remaining-amount"></span></h4>
               </div>
 
 
